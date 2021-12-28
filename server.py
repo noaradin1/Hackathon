@@ -101,7 +101,7 @@ def start_game():
         _thread.start_new_thread(options[i], (connections[i], addresses[i]))
 
 
-# Player1's game
+# Player1's game ddd
 def Player1(client,add):
     global result1
     locking = threading.RLock()
