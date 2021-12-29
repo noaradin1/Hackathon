@@ -8,7 +8,7 @@ import random
 bufferSize = 1024
 clients_array = []
 all_members = 1
-end_time = 100 + time.time()
+end_time = 10 + time.time()
 count = 0
 Players = {}
 result1 = []
@@ -198,7 +198,6 @@ def main():
         try:
             # Send broadcast message to all clients
             MSG = struct.pack('<3Q', 0xabcddcba, 0x2, 0xA)
-            print("sending")
             UDP_socket.sendto(MSG, ('<broadcast>', 13117))
             time.sleep(1)
 

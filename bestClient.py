@@ -1,7 +1,7 @@
 import socket
 import time
 import struct
-import msvcrt
+# import msvcrt
 import string
 import random
 import _thread as thread
@@ -55,7 +55,7 @@ def main():
                     if start_message != "":
                         print(start_message)
                         # Catch the client's input
-                        answer = msvcrt.getch()
+                        answer = getch()
                         coded_answer = answer.decode('ASCII')
                         # Send the answer to the server
                         ClientSock.send(coded_answer.encode()) 
